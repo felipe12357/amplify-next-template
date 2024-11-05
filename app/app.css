@@ -1,4 +1,30 @@
-body {
+@font-face {
+  font-family: 'Moltors';
+  src: url('../public/assets/FontsFree-Net-Garavito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ [data-amplify-container]{
+  width: 100vw !important;
+}
+
+[data-amplify-router]{
+  width: fit-content;
+  margin:auto;
+  margin-top: 5rem;
+}
+
+
+
+
+
+
+
+/* body {
     margin: 0;
     background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
     display: flex;
@@ -62,4 +88,4 @@ body {
   a {
     font-weight: 800;
     text-decoration: none;
-  }
+  } */
