@@ -32,7 +32,7 @@ const formFields = {
   },
 }
 
-const services = {
+/* const services = {
   async handleSignUp(data:any) {
     // custom username and email
     const { username, password, options } = data;
@@ -47,7 +47,7 @@ const services = {
       },
     });
   },
-}
+} */
 
 
 export default function RootLayout({ children, }: {  children: React.ReactNode; }) {
@@ -55,7 +55,7 @@ export default function RootLayout({ children, }: {  children: React.ReactNode; 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Authenticator services={services} formFields={formFields} components={components}> 
+        <Authenticator formFields={formFields} components={components}> 
           <HeaderComponent/>
           {children}
         </Authenticator> 
