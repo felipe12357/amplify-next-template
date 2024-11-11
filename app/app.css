@@ -18,6 +18,29 @@
   margin-top: 5rem;
 }
 
+[data-amplify-theme] {
+  .amplify-button--primary {
+    @apply bg-red-700;
+  }
+
+  .amplify-button--link, .amplify-tabs__item--active {
+    @apply text-red-700;
+  }
+
+  .amplify-tabs__item--active {
+    @apply border-t-red-700
+  }
+
+  .amplify-tabs__item:hover {
+    @apply text-red-700;
+  }
+
+  .amplify-button--link:hover {
+    @apply bg-white;
+  }
+}
+
+
 
 
 

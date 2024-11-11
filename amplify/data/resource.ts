@@ -18,6 +18,14 @@ const schema = a.schema({
       name: a.string()
     })
     .authorization((allow) => [allow.publicApiKey()]),
+  match: a
+    .model({
+      team1: a.string(),
+      team2: a.string(),
+      team1_score:a.integer(),
+      team2_score:a.integer(),
+      date: a.date()
+    })
 });
 
 export type Schema = ClientSchema<typeof schema>;
