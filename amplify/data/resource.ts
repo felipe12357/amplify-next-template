@@ -26,6 +26,7 @@ const schema = a.schema({
       team2_score:a.integer(),
       date: a.date()
     })
+    .authorization((allow) => [allow.publicApiKey()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
