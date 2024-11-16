@@ -18,7 +18,7 @@ const schema = a.schema({
       name: a.string()
     })
     .authorization((allow) => [allow.publicApiKey()]),
-  /* Match: a
+   Match: a
     .model({
       team1: a.string(),
       team2: a.string(),
@@ -26,7 +26,7 @@ const schema = a.schema({
       team2_score:a.integer(),
       date: a.date()
     })
-    .authorization((allow) => [allow.publicApiKey()]), */
+    .authorization((allow) => [allow.publicApiKey()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
