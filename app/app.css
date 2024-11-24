@@ -38,6 +38,14 @@
   .amplify-button--link:hover {
     @apply bg-white;
   }
+
+  .amplify-input[type="number"]{
+    @apply w-24
+  }
+
+  .amplify-input[type="date"]{
+    @apply w-36
+  }
 }
 
 

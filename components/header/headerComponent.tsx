@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import logoCopaAmerica from '../../public/assets/logo-copa-america.png';
 // import ButtonComponent from '../button/buttonComponent';

@@ -20,8 +20,8 @@ const schema = a.schema({
     .authorization((allow) => [allow.publicApiKey()]),
    Match: a
     .model({
-      team1: a.string(),
-      team2: a.string(),
+      team1: a.string().required(),
+      team2: a.string().required(),
       team1_score:a.integer(),
       team2_score:a.integer(),
       date: a.date()
